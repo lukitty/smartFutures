@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding:0;
+}
+
+/* para garantir que estes elementos ocuparão toda a tela */
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+#fundo-externo {
+    overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
+    width: 100%;
+    height: 100%;
+    position: relative; /* criamos um contexto para posicionamento */
+}
+
+#fundo {
+    position: fixed; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+    width: 100%;
+    height: 100%;
+}
+
+#fundo img {
+    width: 100%; /* com isso imagem ocupará toda a largura da tela. Se colocarmos height: 100% também, a imagem irá distorcer */
+    position: absolute;
+}
+#site {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    right: 50%;
+    width: 560px;
+    padding: 20px;
+    margin-left: -320px; /* por causa do posicionamento absoluto temos que usar margem negativa para centralizar o site */
+    background: #FFF; /* fundo branco para navegadores que não suportam rgba */
+    background: rgba(255, 255, 255, 0.8); /* fundo branco com um pouco de transparência */
+}
+#siteTitulo {
+    font-size: 40px;
+    font-family: fantasy;
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    right: 100%;
+    width: 730px;
+    padding: 20px;
+    margin-left: -400px; /* por causa do posicionamento absoluto temos que usar margem negativa para centralizar o site */
+    background: rgb(255, 255, 255); /* fundo branco para navegadores que não suportam rgba */
+    background: rgba(255, 255, 255, 0.8); /* fundo branco com um pouco de transparência */
+    -webkit-transition: all 1s ease-out;
+}
+#sitepara {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    right: 100%;
+    width: 730px;
+    padding: 20px;
+    margin-left: -400px; /* por causa do posicionamento absoluto temos que usar margem negativa para centralizar o site */
+    background: rgb(255, 255, 255); /* fundo branco para navegadores que não suportam rgba */
+    background: rgba(255, 255, 255, 0.8); /* fundo branco com um pouco de transparência */
+}
+#siteparaTabela {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    right: 100%;
+    width: 1300px;
+    padding: 20px;
+    margin-left: -655px; /* por causa do posicionamento absoluto temos que usar margem negativa para centralizar o site */
+    background: rgb(255, 255, 255); /* fundo branco para navegadores que não suportam rgba */
+    background: rgba(255, 255, 255, 0.8); /* fundo branco com um pouco de transparência */
+}
+#sitepara2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-align: center;
+    position: absolute;
+    top: 800px;
+    left: 50%;
+    right: 100%;
+    width: 730px;
+    padding: 20px;
+    margin-left: -400px; /* por causa do posicionamento absoluto temos que usar margem negativa para centralizar o site */
+    background: rgb(255, 255, 255); /* fundo branco para navegadores que não suportam rgba */
+    background: rgba(255, 255, 255, 0.8); /* fundo branco com um pouco de transparência */
+}
+#sitepara3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 1200px;
+    left: 50%;
+    right: 100%;
+    width: 730px;
+    padding: 20px;
+    margin-left: -400px; /* por causa do posicionamento absoluto temos que usar margem negativa para centralizar o site */
+    background: rgb(255, 255, 255); /* fundo branco para navegadores que não suportam rgba */
+    background: rgba(255, 255, 255, 0.8); /* fundo branco com um pouco de transparência */
+}
+#sitepara4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 1200px;
+    left: 50%;
+    right: 100%;
+    width: 800px;
+    padding: 20px;
+    margin-left: -440px; /* por causa do posicionamento absoluto temos que usar margem negativa para centralizar o site */
+    background: rgb(255, 255, 255); /* fundo branco para navegadores que não suportam rgba */
+    background: rgba(255, 255, 255, 0.8); /* fundo branco com um pouco de transparência */
+}
+#footerHome {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: antiquewhite;
+    text-align: center;
+    position: absolute;
+    top: 2800px;
+    width: 1374px;
+    height: 250px;
+    padding: 20px;
+    left: 50%;
+    right: 100%;
+    margin-left: -700px;
+    background: black;
+    background: rgba(0, 0, 0, 0.95);
+}
+#footerFut {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: antiquewhite;
+    text-align: center;
+    position: absolute;
+    top: 1300px;
+    width: 1374px;
+    height: 250px;
+    padding: 20px;
+    left: 50%;
+    right: 100%;
+    margin-left: -700px;
+    background: black;
+    background: rgba(0, 0, 0, 0.95);
+}
+#footerFale {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: antiquewhite;
+    text-align: center;
+    position: absolute;
+    top: 1000px;
+    width: 1374px;
+    height: 310px;
+    padding: 20px;
+    left: 50%;
+    right: 100%;
+    margin-left: -700px;
+    background: black;
+    background: rgba(0, 0, 0, 0.9);
+}
+#final {
+    font-family: cursive;
+    font-size: 15px;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+div.a{
+    text-align: center;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
